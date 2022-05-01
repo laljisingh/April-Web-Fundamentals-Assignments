@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pro.css">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        #container{
+            width: 100%;
+            height: 10vh;
+            background-color: rgb(151, 93, 21);
+            color: white;
+            position: sticky;
+            position: -webkit-sticky; /* Safari */
+            top: 0;
+            display: flex;
+        }
+        #home{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-left: 40%;
+            padding: 10px;
+            justify-content: right;
+            text-align: right;
+            width: 50%;
+            justify-content: space-around;
+
+        }
+        #geek{
+            margin-left: 30px;
+            /* margin-right: 20px; */
+            width: 300px;
+            /* padding-bottom: 30px; */
+            justify-content: center;
+            height: 30px;
+            margin-bottom: 100  px;
+            vertical-align: center;
+            /* background-colo  r: black; */
+            font-size: 30px;     
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+        a:hover{
+            color: aqua;
+        }
+
+        #second{
+            width: 100%;
+            display: flex;
+            background-image: url(https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__480.jpg);
+            height: 800px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: red;
+        }
+        .pic{
+            background-color: rgba(0, 0, 0, 0.5);
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            /* justify-items: center; */
+            align-items: center;
+            text-align: center;
+        }
+        button{
+            background-color: rgb(38, 209, 195);
+            border-radius: 3px;
+            border: 0px;
+            width: 400px;
+            height: 50px;
+            margin-top: 10px;
+            font-size: 20px;
+            color: rgb(232, 233, 232);
+        }
+        button:hover{
+            background-color: bisque;
+            color: brown;
+            box-shadow: 10px 10px 30px rgb(89, 228, 89);
+           /* border: 30px green; */
+        }
+        #content{
+            color: rgb(226, 43, 58);
+            font-size: 20px;
+        }
+        #h2{
+          font-size: 40px;
+          box-shadow: 1px 1px 20px rgb(91, 226, 170);
+          border-radius: 10px;  
+          padding: 10px;
+        background-color: rgba(0,0,0,0.8);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <p id="geek">Geekster World</p>
+        <div id="home">
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Landing Page</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <div id="second">
+        <div class="pic">
+            <h2 id="h2">Welcome to Geekster World</h2>
+            <p id="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, quos. Ad, eos. Magni voluptatem suscipit nobis adipisci nisi quibusdam, eius quis perspiciatis inventore corporis placeat beatae! Quisquam qui quibusdam corrupti?</p>
+            <button>Explre More !</button>
+
+            <div id="intro">
+               <div><img src="https://i.pinimg.com/736x/e1/65/fd/e165fda620149ff73c72c06aa3ac6be8.jpg" width="400" height="400" alt=""></div>
+               <div><span id="desc">HI I am fresher students in computer science and engineering
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quidem officia quas similique saepe aliquam ab vero, distinctio fugit maiores.
+               </span></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
