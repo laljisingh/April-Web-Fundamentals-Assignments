@@ -1,0 +1,219 @@
+/* navbar */
+.navbar{
+    position: fixed;
+    top: 0px;
+    background-color: rgb(223, 191, 143);
+    width: 100%;  
+    height: 5%; 
+    box-shadow: 1px 1px 5px rgb(44, 42, 42); 
+}
+
+*{margin: 0px;padding: 0px;}
+ul {
+    list-style-type: none;
+    /* vertical-align: middle; */
+    margin-top: 5px;
+    font-family: "Lato", sans-serif;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+li a:hover{
+    color: brown;
+    font-size: 20px;
+    text-shadow: 10px -10px 1px red;
+}
+li{
+    float: left;
+   
+}
+li a{
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+    color: rgb(13, 63, 107);
+}
+/* .bannerImage */
+.bannerImage{
+    display: grid;
+    background-color: #b6b9b68f;
+    grid-template-columns: repeat(2, 50%);
+    align-items: center;
+    justify-content: center;
+}
+.bannerImage .image img{
+    width: 200px;
+    padding: 40px;
+    border-radius: 200px;
+}
+.bannerImage .content .title{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Lato", sans-serif;
+}
+.bannerImage .content .desc{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Lato", sans-serif; 
+}
+.bannerImage .content .about{
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: coral;
+    color: white;
+}
+/* about section */
+.aboutSec{
+    background-color: azure;
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    align-items: center;
+    justify-content: center;
+}
+.aboutSec .decs img{
+    width: 200px;
+    padding: 40px;
+    border-radius: 200px;
+}
+.aboutSec .image p{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: "Lato", sans-serif;
+}
+/* skills section */
+
+.skill{
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    background-color: rgb(50, 94, 94);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: aliceblue;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+
+}
+.skill .programming{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    /* background-color: blueviolet; */
+    padding: 10px;
+    margin-top: 5px;
+}
+.skill .programming .skill1{
+    margin-right: 8px;
+    background-color: rgb(18, 112, 81);
+    border-bottom: 3px solid rgb(85, 14, 14);
+    padding: 2px 0px;
+}
+.skill .programming .skill2{
+    margin-right: 10px;
+    background-color: rgb(94, 93, 170);
+    border-bottom: 3px solid rgb(99, 43, 163);
+    padding: 10px 0px;
+}
+.skill .programming .skill3{
+    margin-right: 10px;
+    background-color: rgb(34, 133, 43);
+    border-bottom: 3px solid rgb(207, 24, 162);
+    padding: 10px 0px;
+}
+.skill .programming .skill4{
+    margin-right: 2px;
+    background-color: rgb(154, 82, 163);
+    border-bottom: 2px solid greenyellow;
+    padding: 10px 0px;
+}
+.skill .programming div i{
+    padding-right:5px;
+    color: rgb(242, 243, 243);
+    font-size: 15px;
+}
+.skill .programming div span{
+    padding-right: 10px;
+    color: rgb(242, 243, 243);
+    font-size: 10px;
+}
+/* contact section */
+.contact{
+    /* height: auto; */
+    width: 100%;
+    display: grid;
+    background-color: #53a9c0;
+    grid-template-columns: repeat(2,50%);
+    /* text-a   lign: center; */
+}
+.contact .image{
+    /* height: 1000px; */
+    width: 500px;
+    /* align-items: center; */
+    padding: 50px 50px;
+}
+.contact .input{
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+}
+.contact .input .form{
+    display: grid;
+    padding: 40px;
+    /* grid-template-columns: repeat(4,100px); */
+    margin: 100px auto;
+}
+.contact .input .form input
+{
+    width: 50%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.contact .input .form p{
+    font-size: 30px;
+    color: aliceblue;
+}
+.contact .input .form span{
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    color: rgb(207 24 162);
+}
+.contact .input .form button{
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 20%;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(17, 126, 99);
+    color: white;
+}
+/* footer */
+.footer{
+    width: 100%;
+    background-color: rgb(15, 126, 74);
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer .message{
+    color: aliceblue;
+    font-size: 30px;
+    padding: 20px 0px;
+
+}
+.footer .social i{
+    color: aliceblue;
+    padding: 10px;
+    font-size: 34px;
+}
+.footer .social i:hover{
+    color:red;
+}
+.footer .year{
+    color: white;
+}
