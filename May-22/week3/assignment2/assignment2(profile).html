@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <style>
+      .pro {
+        background: rgb(108, 186, 9);
+        background: linear-gradient(
+          90deg,
+          rgba(108, 186, 9, 1) 1%,
+          rgba(91, 156, 28, 0.8463760504201681) 19%,
+          rgba(9, 9, 121, 1) 100%,
+          rgba(0, 212, 255, 1) 100%
+        );
+        color: aliceblue;
+      }
+      .search {
+        background: rgb(186, 9, 134);
+        background: linear-gradient(
+          90deg,
+          rgba(186, 9, 134, 0.938813025210084) 1%,
+          rgba(125, 209, 27, 0.6110819327731092) 100%
+        );
+      }
+      .main {
+        background: rgb(9, 186, 23);
+        background: linear-gradient(
+          90deg,
+          rgba(9, 186, 23, 0.5970763305322129) 1%,
+          rgba(27, 209, 204, 0.37298669467787116) 100%
+        );
+      }
+      .img {
+        background: rgb(77, 9, 186);
+        background: linear-gradient(
+          90deg,
+          rgba(77, 9, 186, 0.5970763305322129) 1%,
+          rgba(27, 209, 204, 0.37298669467787116) 100%
+        );
+      }
+      .prof {
+        background: rgb(77, 130, 11);
+        background: linear-gradient(
+          90deg,
+          rgba(77, 130, 11, 0.9780287114845938) 1%,
+          rgba(13, 230, 169, 0.9948354341736695) 100%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container p-5 main">
+      <div class="row bg-danger search">
+        <div class="alert alert-success pro text-center" role="alert">
+          <h2>Professional Profile Search Engine</h2>
+        </div>
+        <div class="col-8 text-center">
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="search profile here"
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <button type="button" class="btn btn-success btn-primary btn-lg">
+            Search
+          </button>
+        </div>
+      </div>
+      <div class="row p-4">
+        <div class="col p-5 img">
+          <img
+            src="https://img.freepik.com/free-photo/woman-hacker-using-dangerous-virous-steal-bank-information-programmer-writing-malware-cyber-attacks-using-performance-laptop-during-midnight_482257-6694.jpg?t=st=1652758645~exp=1652759245~hmac=16997c16d58bc427373daee5688eabc653328f1948fd23464232191cdc860fb9&w=740"
+            class="img-fluid"
+            alt="..."
+          />
+          <div class="row pt-2">
+            <h4 class="text-success p-2" style="color: #1b11b3 !important">
+              Lalji Singh
+            </h4>
+            <button
+              type="button"
+              class="btn btn-warning btn btn-outline-danger"
+            >
+              View Profile
+            </button>
+          </div>
+        </div>
+        <div class="col text-white">
+          <div
+            class="prof text-white alert alert-primary text-center"
+            role="alert"
+          >
+            <h4>Full Stack Web Developer</h4>
+          </div>
+
+          <table class="table table-striped p-4">
+            <tr>
+              <td class="table-primary"><h6>Name :</h6></td>
+              <td class="table-success">Lal ji Singh</td>
+            </tr>
+            <tr>
+              <td class="table-primary"><h6>Emp. Id :</h6></td>
+              <td class="table-success">5682858</td>
+            </tr>
+            <tr>
+              <td class="table-primary"><h6>Current CTC :</h6></td>
+              <td class="table-success">10 LPA</td>
+            </tr>
+            <tr>
+              <td class="table-primary"><h6>Working Place</h6></td>
+              <td class="table-success">CANADA</td>
+            </tr>
+            <tr>
+              <td class="table-primary"><h6>Email :</h6></td>
+              <td class="table-success">abcscd@xyz.com</td>
+            </tr>
+            <tr>
+              <td class="table-primary"><h6>Phone :</h6></td>
+              <td class="table-success">01234569787</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
