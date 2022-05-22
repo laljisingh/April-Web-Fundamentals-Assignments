@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+:root {
+  --off-canvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.offcanvas {
+  background-color: #4e73df;
+  color: #fff;
+}
+#lalji {
+  text-shadow: 1px 10px 5px rgb(32, 228, 91);
+  color: rgb(250, 250, 250);
+}
+li {
+  list-style-type: none;
+}
+
+.sidebar-nav {
+  width: var(--off-canvas-width);
+}
+
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  .offcanvas-backdrop.show {
+    opacity: 0;
+  }
+  .sidebar-nav {
+    visibility: visible !important;
+    transform: none !important;
+    top: var(--topNavbarHeight);
+    height: calc(100% - var(--topNavbarHeight));
+  }
+  main {
+    margin-left: var(--off-canvas-width);
+  }
+}
