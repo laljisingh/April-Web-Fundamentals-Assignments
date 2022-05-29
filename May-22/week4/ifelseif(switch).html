@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch ifelse if</title>
+  </head>
+  <body>
+    <script>
+      var x = prompt("Enter a number");
+      let i;
+      if (x > 0) {
+        i = 0;
+      } else if (x === 0) {
+        i = 1;
+      } else {
+        i = 2;
+      }
+
+      switch (i) {
+        case 0:
+          document.write(`${x} is greater than 0`);
+          console.log(`{x} is greater than 0`);
+          break;
+        case 1:
+          document.write(`${x} is equal 0`);
+          console.log(`${x} is equal 0`);
+          break;
+        case 2:
+          document.write(`${x} is less than 0`);
+          console.log(`${x} is less than 0`);
+          break;
+        default:
+          document.write("Invalid");
+      }
+    </script>
+  </body>
+</html>

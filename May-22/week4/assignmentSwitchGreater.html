@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //number is greater than 5 or not
+      let number = 10;
+      let i;
+      if (number < 5) {
+        i = 1;
+      } else if (number === 5) {
+        i = 0;
+      } else {
+        i = 2;
+      }
+
+      switch (i) {
+        case 0:
+          console.log("Number is equal to the given number");
+          document.write("Number is equal to the given number");
+          break;
+        case 1:
+          console.log("number is less than 5");
+          document.write("number is less than 5");
+          break;
+        case 2:
+          console.log("number is greater than 5");
+          document.write("number is greater than 5");
+          break;
+        default:
+          console.log("not determined");
+          document.write("not determined");
+          break;
+      }
+    </script>
+  </body>
+</html>

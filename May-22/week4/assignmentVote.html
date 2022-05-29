@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //eligible for voting or not
+      let age = 18;
+      let a;
+      if (age < 18) {
+        a = 1;
+      } else if (age === 18) {
+        a = 0;
+      } else {
+        a = 2;
+      }
+
+      switch (a) {
+        case 0:
+          console.log("You are eligible for voting");
+          document.write("You are eligible for voting");
+
+          break;
+        case 1:
+          console.log("You are not eligible for voting");
+          document.write("You are not eligible for voting");
+          break;
+        case 2:
+          console.log("you are eligible for voting");
+          document.write("you are eligible for voting");
+          break;
+        default:
+          console.log("not determined");
+          document.write("not determined");
+          break;
+      }
+    </script>
+  </body>
+</html>
