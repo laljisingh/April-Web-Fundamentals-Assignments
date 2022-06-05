@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Types Of Function</title>
+  </head>
+  <body>
+    <div class="deffinition">
+      <div class="func1">
+        <h1>Types of function usages</h1>
+        <h2>Function Expression</h2>
+        <p>
+          A function can be declared using a function expression. It is declared
+          quite differently from the general syntax because it uses a variable
+          to denote the name of the function. This variable comes before the
+          keyword <b>Function</b>. The function is invoked by calling out the
+          variable with trailing parenthesis and semicolons:
+        </p>
+        <p style="color: green">
+          // Function Expression<br />
+          const add = function(a, b) {<br />
+          console.log(a+b);<br />
+          }
+
+          <br />// Calling function <br />add(2, 3);
+        </p>
+      </div>
+      <div class="func2">
+        <h2>Function Declaration</h2>
+        <p>
+          Function Declaration is the traditional way to define a function. It
+          is somehow similar to the way we define a function in other
+          programming languages. We start declaring using the keyword
+          “function”. Then we write the function name and then parameters.
+        </p>
+        <p style="color: green">
+          // Function declaration <br />
+          function add(a, b) {<br />
+          console.log(a + b);<br />
+          } <br />// Calling a function <br />add(2, 3);
+        </p>
+      </div>
+    </div>
+    <h2>Difference between in Function declaration and function expression</h2>
+    <div class="differ">
+      <table border="1" style="color: green; background-color: antiquewhite">
+        <tr>
+          <th>Function Expression</th>
+          <th>Function Declaration</th>
+        </tr>
+        <tr>
+          <td>
+            A function Expression is similar to a function declaration without
+            the function name.
+          </td>
+          <td>A function declaration must have a function name.</td>
+        </tr>
+        <tr>
+          <td>Function expressions can be stored in a variable assignment.</td>
+          <td>Function declaration does not require a variable assignment.</td>
+        </tr>
+        <tr>
+          <td>
+            Function expressions load and execute only when the program
+            interpreter reaches the line of code.
+          </td>
+          <td>These are executed before any other code.</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

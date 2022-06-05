@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odd Number Sum</title>
+  </head>
+  <body>
+    <script>
+      let num = parseInt(prompt("Enter  number for odd sum"));
+      function oddSum(n) {
+        let Sum = 0;
+        for (var i = 1; i <= n; i += 2) {
+          Sum += i;
+          console.log("+" + i);
+          document.write("+" + i);
+        }
+        document.write("==>" + Sum + "<br>");
+        console.log("==>" + Sum);
+      }
+      oddSum(num);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Number</title>
+  </head>
+  <body>
+    <script>
+      function prime(n) {
+        let num = 1,
+          count = 0,
+          i;
+        while (count < n) {
+          num = num + 1;
+          for (i = 2; i <= num; i++) {
+            if (num % i == 0) {
+              break;
+            }
+          }
+          if (i == num) {
+            //increments the count variable by 1 if the number is prime
+            count = count + 1;
+          }
+        }
+        console.log("The " + n + "th prime number is: " + num);
+        document.write("The " + n + "th prime number is: " + num);
+      }
+
+      let num = parseInt(prompt("Enter number for prime number"));
+      //Function Calling
+      prime(num);
+    </script>
+  </body>
+</html>
