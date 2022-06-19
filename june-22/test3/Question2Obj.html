@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Printing First & last name</title>
+    <style>
+      #fnam {
+        color: red;
+      }
+
+      #lname {
+        color: rgb(130, 189, 20);
+      }
+      span {
+        font-size: 25px;
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+      }
+    </style>
+    <script>
+      let friends = [
+        { fname: "Rachal", lname: "Green", id: 1, marks: 98 },
+        { fname: "Ross", lname: "Geller", id: 2, marks: 23 },
+        { fname: "Monica ", lname: "Geller", id: 3, marks: 75 },
+        { fname: "Joey", lname: " Tribbiani", id: 4, marks: 46 },
+        { fname: "Chandler  ", lname: "Bing", id: 5, marks: 78 },
+        { fname: "Phoebe", lname: "Buffay", id: 6, marks: 45 },
+      ];
+      for (let i = 0; i < friends.length; i++) {
+        const element = friends[i];
+
+        console.log(
+          i +
+            1 +
+            "---> First name is :- " +
+            element.fname +
+            "    /    " +
+            "Last name is :- " +
+            element.lname
+        );
+
+        document.write(
+          i +
+            1 +
+            "---><span id='fnam'> First name is :- " +
+            element.fname +
+            "    /     </span><span id='lname'>" +
+            "Last name is :- " +
+            element.lname +
+            "</span><br>"
+        );
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

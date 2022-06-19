@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sum of +ve & -ve number</title>
+    <style>
+      #ps {
+        color: rgb(94, 94, 4);
+        padding: 50px;
+        font-size: 30px;
+      }
+      #ns {
+        font-size: 30px;
+        color: aqua;
+        padding: 50px;
+      }
+      #a {
+        font-size: 30px;
+        color: red;
+        padding: 50px;
+      }
+    </style>
+    <script>
+      const input = [1, -5, 2, 10, -30, 29, 50];
+      console.log("Array is :" + input);
+      document.write("<span id='a'>Array is :" + input + "</span><br>");
+      let sumOfPositive = 0;
+      let sumOfNegative = 0;
+      for (let i = 0; i < input.length; i++) {
+        if (input[i] > 0) {
+          sumOfPositive += input[i];
+        } else {
+          sumOfNegative += input[i];
+        }
+      }
+      console.log("Sum of Positive number is : " + sumOfPositive);
+      document.write(
+        "<span id='ps'>Sum of Positive number is : " +
+          sumOfPositive +
+          "</span><br>"
+      );
+      console.log("Sum of Positive number is : " + sumOfNegative);
+      document.write(
+        "<span id='ns'>Sum of Negative number is : " +
+          sumOfNegative +
+          "</span><br>"
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

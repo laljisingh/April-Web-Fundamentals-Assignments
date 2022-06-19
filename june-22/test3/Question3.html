@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array ordered list</title>
+    <style>
+      span {
+        color: red;
+        font-size: 25px;
+      }
+      .nm {
+        color: rgb(20, 196, 137);
+      }
+    </style>
+    <script>
+      let city = ["Delhi", "Mumbai", "Jaipur", "Kolkata", "Indore"];
+      var li = document.getElementById("list");
+      for (let i = 0; i < city.length; i++) {
+        const element = city[i];
+        console.log(i + 1 + "..." + element);
+        document.write(
+          "<span class='nm'>" +
+            (i + 1) +
+            ".</span>  " +
+            "<span>" +
+            element +
+            "</span></br>"
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <ol id="list"></ol>
+  </body>
+</html>
